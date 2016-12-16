@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    #import("head")
+    <link href="/styles/skeleton/normalize.css" rel="stylesheet">
+    <link href="/styles/skeleton/skeleton.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    
+    <link href="/styles/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        #import("body")
+    </div>
+</body>
+    
+    
+</html
