@@ -5,6 +5,6 @@
 
 #export("body") {
     #embed("team")
+        <hr />
+    #embed("searchTable")
 }
-
-

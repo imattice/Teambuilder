@@ -1,0 +1,22 @@
+$margin-from-body: 5px;
+
+header {
+  border-bottom: grey solid 1px;
+  display: flex;
+  margin-bottom: $margin-from-body;
+
+  div {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+
+footer {
+  border-top: grey solid 1px;
+  display: flex;
+  margin-top: $margin-from-body;
+  div {
+    text-align: center;
+  }
+}

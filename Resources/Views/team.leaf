@@ -1,51 +1,37 @@
-<div>
-<h1>Team Template</h1>
-<hr>
-
-    <div>
-        #loop(members, "member") {
-            <div class="member-container">
+<div id="myteam">
+    #loop(members, "member") {
+        <div class="member-container">
+            <!-- <div class="placeholder"></div> -->
+            <div class="member">
                 <div class="member-header">
                     <h2>#(member.name)</h2>
-                    <h1>#(member.gender)</h1>
-
-                    #if(#(member.gender) == "male") {
-                        <img class="malegender" href="../../Public/images/icons/male-icon.png" />
-                    } ##if(#(member.gender) == "female") {
-                        <img class="femalegender" />
-                    } ##else() {
-                        <img class="nogender" />
-                    }
-                    <img class="sprite" href=""/>
+                    #raw() {<img class="gender" src="images/icons/male-icon.png" /> }
+                    <img class="sprite" src="images/sprites/png/#(member.id).png" />
                     <h3>#(member.ability)</h3>
                     <h3>#(member.nature)</h3>
                 </div>
-                
-                
+
+
                 <div class="stats">
-                    
+
                 </div>
-                
-                
-                
+
+
+
                 <div class="moves">
                     #loop(member.moves, "move") {
                         <h3>#(move)</h3>
                     }
                 </div>
-            </div>
-        }
-        
-        </div>
-    </div>
 
+                <div class="edit-buttons">
+                    <button>Edit</button>
+                    <button>Release</button>
+                </div>
+            </div>
+        </div>
+    }
 </div>
 
 
-Heya.  Looking for some Leaf clairification.  I have
-```#if(#(item.text) == "Hello") {
-<h1>Hello</h1>
-} ##else {
-<h1>Goodbye</h1>
-}```
-and it only seems to evaluate the `else` clause, despite the `if` being true.  Do Leaf `if` statements only accept explicit bool variables or can they evaluate a comparison like above and I just have some syntax wrong?
+<button>Analyze</button>

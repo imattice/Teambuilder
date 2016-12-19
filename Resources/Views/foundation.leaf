@@ -7,16 +7,23 @@
     <link href="/styles/skeleton/normalize.css" rel="stylesheet">
     <link href="/styles/skeleton/skeleton.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    
+
     <link href="/styles/main.css" rel="stylesheet">
 
 </head>
 
 <body>
+    #embed("header")
+
     <div class="container">
         #import("body")
     </div>
+
+    #embed("footer")
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/myteam.js"></script>
 </body>
-    
-    
+
+
 </html

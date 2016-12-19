@@ -1,0 +1,47 @@
+
+
+<div class="search-table-container">
+
+
+<input class="name-search" type="text" placeholder="Find a Pokemon by Name" name="name"/>
+
+  <div class="search-pokemon">
+    #loop(allPokemon, "pokemon") {
+      <img src='images/sprites/png/1.png' />
+    }
+  </div>
+
+<div class="filter-buttons-container">
+  <button class="type-search">Type</button>
+    <div class="all-types popout">
+      <div>
+        #loop(types, "type") {
+          <label class='button'>
+            #(type)
+            <input class="#(type)" type="checkbox">
+          </label>
+        }
+      </div>
+      <div class="tail"></div>
+    </div>
+
+
+
+  <button class="recommend">Recommend</button>
+
+
+
+  <button class="generation-search">Generation</button>
+    <div class="all-generations popout">
+      #loop(generations, "generation") {
+        <label class="button">
+          #(generation.name)
+          <input class="#(generation)" type="checkbox">
+        </label>
+      }
+    </div>
+    <div class="tail"></div>
+
+</div>
+
+</div>

@@ -1,0 +1,107 @@
+$active-animation-time: 1s;
+
+#myteam {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    margin: 0;
+    flex-direction: row;
+
+    -webkit-transition: $active-animation-time;
+    transition: $active-animation-time;
+    transform-origin: center center;
+}
+
+.member-container {
+    width: 275px;
+    height: 200px;
+
+
+    -webkit-transition: $active-animation-time;
+    transition: $active-animation-time;
+    transform-origin: center center;
+    // width: 30%;
+    // height: 40%;
+    // flex: 1;
+    // margin: 40px;
+    // display: inline-flex;
+}
+.member {
+    height: 100%;
+    width: 100%;
+    background: $grey-pane;
+    margin: auto;
+
+    -webkit-transition: $active-animation-time;
+    transition: $active-animation-time;
+    transform-origin: center center;
+}
+
+.placeholder {
+    display: none;
+}
+
+.gender {
+    display: none;
+}
+.moves {
+    display: none;
+}
+.edit-buttons {
+    display: none;
+    flex-direction: row;
+}
+
+.member-header {
+    flex-direction: column;
+    height: 100%;
+
+    * {
+        margin: auto;
+    }
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        display: none;
+    }
+}
+
+
+
+//ANIMATIONS
+.member-active {
+    height: 500px;
+    width: 400px;
+    margin:10px;
+
+    // height: 45%;
+    // width: 35%;
+    //position: absolute;
+
+
+    // flex: 3;
+    -webkit-transition: $active-animation-time;
+    transition: $active-animation-time;
+    transform-origin: center center;
+}
+
+.member-inactive {
+    width: 250px;
+    height: 175px;
+}
+
+.placeholder-active {
+    display: flex;
+    width: 30%;
+    height: 40%;
+    margin: auto;
+    background: yellow;
+}
+
+.myteam-active {
+    height:700px !important;
+
+    -webkit-transition: $active-animation-time;
+    transition: $active-animation-time;
+}

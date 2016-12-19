@@ -1,0 +1,6 @@
+<footer>
+  <div class="container">
+    <h6>&copy;2017 Ike Mattice</h6>
+    <h6>Built using <a href="https://vapor.codes/">Vapor</a></h6>
+  </div>
+</footer>

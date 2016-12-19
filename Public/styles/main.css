@@ -1,3 +1,160 @@
+div {
+  display: flex;
+  flex-direction: column;
+  margin: auto; }
 
+header {
+  border-bottom: grey solid 1px;
+  display: flex;
+  margin-bottom: 5px; }
+  header div {
+    justify-content: space-between;
+    flex-direction: row; }
+
+footer {
+  border-top: grey solid 1px;
+  display: flex;
+  margin-top: 5px; }
+  footer div {
+    text-align: center; }
+
+#myteam {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  margin: 0;
+  flex-direction: row;
+  -webkit-transition: 1s;
+  transition: 1s;
+  transform-origin: center center; }
+
+.member-container {
+  width: 275px;
+  height: 200px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  transform-origin: center center; }
+
+.member {
+  height: 100%;
+  width: 100%;
+  background: rgba(72, 72, 72, 0.8);
+  margin: auto;
+  -webkit-transition: 1s;
+  transition: 1s;
+  transform-origin: center center; }
+
+.placeholder {
+  display: none; }
+
+.gender {
+  display: none; }
+
+.moves {
+  display: none; }
+
+.edit-buttons {
+  display: none;
+  flex-direction: row; }
+
+.member-header {
+  flex-direction: column;
+  height: 100%; }
+  .member-header * {
+    margin: auto; }
+  .member-header h2 {
+    text-align: center; }
+  .member-header h3 {
+    display: none; }
+
+.member-active {
+  height: 500px;
+  width: 400px;
+  margin: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  transform-origin: center center; }
+
+.member-inactive {
+  width: 250px;
+  height: 175px; }
+
+.placeholder-active {
+  display: flex;
+  width: 30%;
+  height: 40%;
+  margin: auto;
+  background: yellow; }
+
+.myteam-active {
+  height: 700px !important;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.search-table-container {
+  width: 100%; }
+
+.name-search {
+  width: 99%;
+  margin: auto;
+  margin-top: 0.5%; }
+
+.search-pokemon {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  height: 500px;
+  direction: ltr; }
+  .search-pokemon img {
+    height: 100px;
+    margin: auto; }
+
+.filter-buttons-container {
+  width: 100%;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-around; }
+  .filter-buttons-container button {
+    margin-top: 1rem; }
+
+.popout {
+  display: none;
+  margin: 0;
+  position: absolute;
+  bottom: 75px; }
+  .popout label {
+    margin: auto; }
+  .popout input {
+    display: none; }
+
+.all-types {
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  left: 1%; }
+  .all-types div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%; }
+  .all-types label {
+    width: 30%; }
+
+.all-generations {
+  width: auto;
+  height: auto;
+  right: 1%; }
+  .all-generations label {
+    width: 90%;
+    margin: 3% auto; }
+
+.tail {
+  display: none;
+  height: 50px !important;
+  width: 50px !important;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute; }
 
 /*# sourceMappingURL=main.css.map */

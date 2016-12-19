@@ -1,0 +1,121 @@
+.search-table-container {
+  //background: aliceblue;
+  width: 100%;
+
+}
+
+.name-search {
+  //backgound: green;
+  width: 99%;
+  margin: auto;
+  margin-top: 0.5%;
+}
+
+.search-pokemon {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  height: 500px;
+  direction: ltr;
+//TODO: Install a JS Library that allows for pagination
+
+  img {
+    //background: lightyellow;
+    height: 100px;
+    margin: auto;
+  }
+}
+
+
+
+
+
+//FILTER BUTTONS
+.filter-buttons-container {
+  //background: purple;
+  width: 100%;
+  flex-direction: row;
+  //padding: 0.5%;
+  position: relative;
+  justify-content: space-around;
+
+  button {
+    margin-top: 1rem; //mirrors a bottom margin set by skeleton
+  }
+}
+
+.popout {
+  display: none;
+  //background: wheat;
+  margin: 0;
+  position: absolute;
+  bottom: 75px;
+
+  label {
+    margin: auto;
+  }
+
+  input {
+    display: none;
+  }
+}
+
+
+.type-search {
+  //background: red;
+
+}
+
+.all-types {
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  //background: wheat;
+  left: 1%;
+
+  div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  }
+
+  label {
+    width: 30%;
+  }
+}
+
+
+
+
+.generation-search {
+  //background: blue;
+
+}
+
+.all-generations {
+  width: auto;
+  height: auto;
+  right: 1%;
+
+  label {
+    width: 90%;
+    margin: 3% auto;
+  }
+}
+
+.recommend {
+  //background: brown;
+}
+
+
+.tail {
+  display: none;
+  //background: black;
+  height: 50px !important;
+  width: 50px !important;
+    -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+}
