@@ -4,19 +4,15 @@
             <!-- <div class="placeholder"></div> -->
             <div class="member">
                 <div class="member-header">
-                    <h2>#(member.name)</h2>
-                    #raw() {<img class="gender" src="images/icons/male-icon.png" /> }
-                    <img class="sprite" src="images/sprites/png/#(member.id).png" />
-                    <h3>#(member.ability)</h3>
-                    <h3>#(member.nature)</h3>
+                    <h2>#(member.name)&ensp;<img class="gender" src="images/icons/male-icon.png" /></h2>
+                    <div>
+                        <div class="member-detail">
+                            <h4 class="ability">#(member.ability)</h4>
+                            <h4 class="nature">#(member.nature)</h4>
+                        </div>
+                        <img class="sprite" src="images/sprites/png/#(member.id).png" />
+                    </div>
                 </div>
-
-
-                <div class="stats">
-
-                </div>
-
-
 
                 <div class="moves">
                     #loop(member.moves, "move") {
